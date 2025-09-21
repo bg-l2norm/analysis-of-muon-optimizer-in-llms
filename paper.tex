@@ -64,7 +64,8 @@ All experiments were conducted using a consistent setup to ensure comparability 
 \begin{itemize}
     \item \textbf{Model Architecture}: A 6-layer MoE Transformer with a model dimension of 384, 8 attention heads, and a feed-forward dimension of 1536. The model included 8 experts, with a top-2 routing strategy.
     \item \textbf{Dataset}: A 500,000 token subset of the SmolLM corpus.
-    \item \textbf{Training}: All models were trained for 1000 steps with a batch size of 24 and 4 gradient accumulation steps.
+    \item \textbf{Training}: Models were trained with a batch size of 24 and 4 gradient accumulation steps. The baseline comparison (Experiment 1) was run for \textbf{5000 steps}, while the ablation and hyperparameter studies (Experiments 2 and 3) were run for \textbf{1000 steps} to facilitate quicker iteration.
+
     \item \textbf{Hardware}: Experiments were conducted in a low-compute environment, utilizing a single NVIDIA RTX 4090 GPU or a Google Colab T4 GPU. Future experiments may be upgraded to higher-compute environments.
 \end{itemize}
 
