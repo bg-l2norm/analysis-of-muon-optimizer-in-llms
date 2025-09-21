@@ -2,7 +2,7 @@
 
 ## Configuration
 - **Model**: MoE Transformer (384d, 6L, 8H, 1536ff)
-- **Training**: 1000 steps, batch size 24, gradient accumulation 4
+- **Training**: 5000 steps, batch size 24, gradient accumulation 4
 - **Data**: 500K tokens from SmolLM corpus
 - **Optimizers**: Muon (hybrid) vs AdamW (pure)
 - **Random Seed**: 42
